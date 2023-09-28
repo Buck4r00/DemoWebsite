@@ -11,7 +11,18 @@
         <img src="img/Color logo with background.png" width="600px" height="500px">
     </div>
     
- 	<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-	<script src="https://mediafiles.botpress.cloud/91d5c27a-e41e-40cb-aa81-355b854febec/webchat/config.js" defer></script>
+  <script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '651194d6ab3cff00089f7345' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
 </body>
 </html>
